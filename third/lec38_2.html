@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start and Stop Console Printing</title>
+</head>
+<body>
+    <h1>Start and Stop Printing Name</h1>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+
+    <script>
+        let intervalId;
+
+        document.getElementById('startButton').addEventListener('click', function() {
+            if (!intervalId) { // Avoid starting multiple intervals
+                intervalId = setInterval(function() {
+                    console.log('tushar '); // Replace 'Your Name' with your actual name
+                }, 1000); // Prints every 1 second
+            }
+        });
+
+        document.getElementById('stopButton').addEventListener('click', function() {
+            clearInterval(intervalId);
+            intervalId = null; // Reset intervalId
+        });
+    </script>
+</body>
+</html>

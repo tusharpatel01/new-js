@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 projects with async</title>
+</head>
+<body>
+    <h1>this is first name</h1>
+    <h2>this is not paragraph</h2>
+    <p>this is the first paragraph</p>
+    <button id="best">stop</button>
+    
+</body>
+<script>
+    const nameChange=function(){
+        document.querySelector('h1').innerHTML='best one to study'
+
+    }
+   const changeme=setTimeout(nameChange,2000);
+//   clearTimeout(changeme)
+const stopvar=document.querySelector("#best").addEventListener('click',function(){
+    clearTimeout(changeme)
+    console.log('stopped');
+    
+})
+   
+   
+</script>
+</html>
