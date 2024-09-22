@@ -1,0 +1,70 @@
+.brand img{
+    height: 50px;
+    width: auto;
+    padding: 0 10px;
+}
+body{
+    background-color: antiquewhite;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+nav ul li{
+    padding:0 10px;
+    margin: 10px;
+}
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: #3a3636;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    bottom: 0;
+    color: white;
+    flex-direction: column;
+}
+    .icons{
+        margin: 10px;
+        
+    }
+
+.container{
+    min-height: 75vh;
+    /* background-color: #aea4a4; */
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    padding: 34px;
+    border-radius: 12px;
+   background-image: url('bsackgroundspotify.jpg');
+}
+#myprogressbar{
+    width: 80vw
+}
+.icons img{
+    height: 30px;
+    width: auto;
+    
+}
